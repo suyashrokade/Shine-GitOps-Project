@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: userprofile-blue-green
+  name: Suyash Application
   namespace: argocd
 spec:
   project: default
@@ -14,7 +14,7 @@ spec:
         userprofile:
           activeVersion: blue
   destination:
-    server: https://180C48E2CB31D6D78FC21B5A77FCDB66.gr7.us-east-1.eks.amazonaws.com
+    server: https://kubernetes.default.svc
     namespace: retail
   syncPolicy:
     automated:
