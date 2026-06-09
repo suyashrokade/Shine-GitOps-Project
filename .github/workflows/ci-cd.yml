@@ -40,5 +40,5 @@ jobs:
           --username admin \
           --password FWsoSrvmZM3H1jhu \
           --insecure
-        argocd app sync userprofile-blue-green --force
+        argocd app sync application --force
         echo "Pipeline SUCCESS!"
